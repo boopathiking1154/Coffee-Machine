@@ -5,6 +5,7 @@ disposable_cups = 9
 money = 550
 
 def print_stock():
+    '''Function to print remaining stock of ingredients'''
     print("The coffee machine has:")
     print(water, "of water")
     print(milk, "of milk")
@@ -13,6 +14,7 @@ def print_stock():
     print("${} of money".format(money))
 
 def buy():
+    '''Function to make purchase of coffee'''
     global water
     global milk
     global money
@@ -69,6 +71,7 @@ def buy():
 
 
 def fill():
+    '''Function to re-fill the ingredients'''
     global water
     global milk
     global coffee_beans
@@ -83,6 +86,7 @@ def fill():
     disposable_cups += add_cups
 
 def take():
+    '''Function to take money'''
     global money
     print("I gave you $", money)
     money = 0
